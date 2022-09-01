@@ -1,8 +1,8 @@
 import React from 'react';
-import image from '../assets/images/logo-DH.png';
+import image from '../assets/images/logo.png';
 import ContentWrapper from './ContentWrapper';
-import GenresInDb from './GenresInDb';
-import LastMovieInDb from './LastMovieInDb';
+import CategoriesInDb from './CategoriesInDb';
+import LastProductInDb from './LastMovieInDb';
 import ContentRowMovies from './ContentRowMovies';
 import SearchMovies from './SearchMovies';
 import NotFound from './NotFound';
@@ -28,7 +28,7 @@ function SideBar(){
                 <li className="nav-item active">
                     <Link className="nav-link" to="/">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard - DH movies</span></Link>
+                        <span>Dashboard - Otaku Sekai</span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -39,15 +39,15 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                <Link className="nav-link" to="/GenresInDb">
+                <Link className="nav-link" to="/CategoriesInDb">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
+                        <span>Categories</span>
                     </Link>
                 </li>
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" to="/LastMovieInDb">
+                    <Link className="nav-link" to="/LastProductInDb">
                         <i className="fas fa-fw fa-chart-area"></i>
                         <span>Charts</span></Link>
                 </li>
@@ -76,11 +76,11 @@ function SideBar(){
             {/*<!--<Route exact path="/">
                 <ContentWrapper />
             </Route>
-            <Route path="/GenresInDb">
-                <GenresInDb />
+            <Route path="/CategoriesInDb">
+                <CategoriesInDb />
             </Route>
-            <Route path="/LastMovieInDb">
-                <LastMovieInDb />
+            <Route path="/LastProductInDb">
+                <LastProductInDb />
             </Route>
             <Route path="/ContentRowMovies">
                 <ContentRowMovies />
@@ -92,11 +92,11 @@ function SideBar(){
                 <Route exact path="/">
                     <ContentWrapper />
                 </Route>
-                <Route path="/GenresInDb">
-                    <GenresInDb />
+                <Route path="/CategoriesInDb">
+                    <CategoriesInDb />
                 </Route>
-                <Route path="/LastMovieInDb">
-                    <LastMovieInDb />
+                <Route path="/LastProductInDb">
+                    <LastProductInDb />
                 </Route>
                 <Route path="/ContentRowMovies">
                     <ContentRowMovies />
