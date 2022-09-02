@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-function ChartRow(props){
+function DatosGrilla(props){
     return (
                 <tr>
-                    <td>{props.Title}</td>
+                    <td>{props.nombre}</td>
                     <td>{props.Length}</td>
                     <td>{props.Rating}</td>
                     <td>
@@ -21,4 +21,4 @@ function ChartRow(props){
     
         
 
-export default ChartRow;
+export default DatosGrilla;

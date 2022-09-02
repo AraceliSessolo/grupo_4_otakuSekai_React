@@ -1,16 +1,16 @@
 import React from 'react';
-import ChartRow from './ChartRow';
+import DatosGrilla from './DatosGrilla';
 
 let tableRowsData = [
     {
-        Title: 'Billy Elliot ',
+        nombre: 'Billy Elliot ',
         Length: '123',
         Rating: '5',
         Categories: ['Drama','Comedia'],
         Awards: 2
     },
     {
-        Title: 'Alicia en el país de las maravillas',
+        nombre: 'Alicia en el país de las maravillas',
         Length: '142',
         Rating: '4.8',
         Categories: ['Drama','Acción','Comedia'],
@@ -20,7 +20,7 @@ let tableRowsData = [
 ]
 
 
-function Chart (){
+function Grilla (){
     return (
         /* <!-- DataTales Example --> */
         <div className="card shadow mb-4">
@@ -29,26 +29,26 @@ function Chart (){
                     <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
                         <thead>
                             <tr>
-                                <th>Título</th>
-                                <th>Duración</th>
-                                <th>Rating</th>
-                                <th>Género</th>
-                                <th>Premios</th>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th>Precio</th>
+                                <th>Categoria</th>
+                                <th>Descuento</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
-                                <th>Título</th>
-                                <th>Duración</th>
-                                <th>Rating</th>
-                                <th>Género</th>
-                                <th>Premios</th>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th>Precio</th>
+                                <th>Categoria</th>
+                                <th>Descuento</th>
                             </tr>
                         </tfoot>
                         <tbody>
                             {
                             tableRowsData.map( ( row , i) => {
-                                return <ChartRow { ...row} key={i}/>
+                                return <DatosGrilla { ...row} key={i}/>
                             })
                             }
 
@@ -61,4 +61,4 @@ function Chart (){
     )
 }
 
-export default Chart;
+export default Grilla;

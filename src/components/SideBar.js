@@ -1,9 +1,9 @@
 import React from 'react';
 import image from '../assets/images/logo.png';
 import ContentWrapper from './ContentWrapper';
-import CategoriesInDb from './CategoriesInDb';
-import LastProductInDb from './LastMovieInDb';
-import ContentRowMovies from './ContentRowMovies';
+import CategoriesInDb from './CategoriasDb';
+import LastProductInDb from './UltimoProductoCreado';
+import ContentRowMovies from './DatosEnCards';
 import SearchMovies from './SearchMovies';
 import NotFound from './NotFound';
 import {Link, Route, Switch} from 'react-router-dom';
