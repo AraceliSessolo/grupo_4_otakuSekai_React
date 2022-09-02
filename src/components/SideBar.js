@@ -63,7 +63,7 @@ function SideBar(){
                 <li className="nav-item nav-link">
                     <Link className="nav-link" to="/SearchMovies">
                         <i className="fas fa-search"></i>
-                        <span>Search a movie</span>
+                        <span>Buscar Producto</span>
                     </Link>
                 </li>
 
