@@ -43,10 +43,10 @@ class ContentRowTop extends Component{
 	render() {
 
 		let imageRoute;
-		if (this.state.imageSrc === '') {
+		if (this.state.image === '') {
 			imageRoute = '';
 		} else {
-			imageRoute = this.state.imageSrc;
+			imageRoute = this.state.image;
 		}
 
 		return (

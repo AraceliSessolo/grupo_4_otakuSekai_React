@@ -14,7 +14,6 @@ class DatosCards extends Component{
     
     componentDidMount(){
         let cantProductos = fetch('api/products').then(respuesta =>{return respuesta.json()});
-        console.log(cantProductos)
         let cantUsuarios = fetch('api/users/').then(respuesta =>{return respuesta.json()});
         let categoriesCount = fetch('api/products').then(respuesta =>{return respuesta.json()});
         Promise.all ([cantProductos,cantUsuarios,categoriesCount])
