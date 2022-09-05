@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ContentRowCenter from './ContentRowCenter';
 import DatosEnCards from './DatosEnCards';
 import Chart from './Grilla';
 import CategoriasDb from './CategoriasDb';
@@ -31,7 +30,8 @@ class ContentRowTop extends Component{
 						this.setState({ nombre: producto.data.name });
 						this.setState({ descripcion: producto.data.description });
 						let parts = producto.data.image.split('/');
-						this.setState({ imageSrc: 'api/products/' + parts[parts.length - 1] });
+						this.setState({ imageSrc: 'img/productos/' + parts[parts.length - 1] });
+						console.log(parts)
 					})
 					.catch(error => {
 						return (error)
@@ -45,9 +45,8 @@ class ContentRowTop extends Component{
 		if (this.state.image === '') {
 			imageRoute = '';
 		} else {
-			imageRoute = this.state.image;
+			imageRoute = this.state.imageSrc;
 		}
-		console.log(imageRoute)
 
 		return (
 			<React.Fragment>
@@ -63,18 +62,15 @@ class ContentRowTop extends Component{
 					
 					<div className="row">
 
-						
-						<ContentRowCenter />
 
 						<CategoriasDb />
 
 						<Chart />
 
-						{/*<!-- ULTIMO PRODUCTO CREADO -->*/}
 						<div className="col-lg-6 mb-4">
 								<div className="card shadow mb-4">
 									<div className="card-header py-3">
-										<h5 className="h1 m-0 font-weight-bold text-gray-800">Último Producto</h5>
+										<h5 className="h1 m-0 font-weight-bold text-gray-800">Último Producto Creado</h5>
 									</div>
 									<div className="card-body">
 										<div className="text-center">

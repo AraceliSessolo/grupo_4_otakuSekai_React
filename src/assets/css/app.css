@@ -618,7 +618,8 @@ pre code {
     padding-right: .75rem;
     padding-left: .75rem;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    background-image: url("../images/fondo.jpg")
 }
 
 .row {
@@ -12228,7 +12229,8 @@ form.user .btn-user {
 
 footer.sticky-footer {
     padding: 2rem 0;
-    flex-shrink: 0
+    flex-shrink: 0;
+   
 }
 
 footer.sticky-footer .copyright {
