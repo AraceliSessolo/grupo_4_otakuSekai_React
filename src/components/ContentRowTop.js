@@ -16,14 +16,14 @@ class ContentRowTop extends Component{
 		}
 	}
 	componentDidMount() {
-		fetch('api/products')
+		fetch('api/products/')
 			.then(respuesta => { return respuesta.json() })
 			.then(productos => { return productos.data[productos.data.length - 1] })
 			.then(ultProducto => { 
 				
 				let parts = ultProducto.detail.split('/');
 				
-				let detailUrl = 'api/products' + parts[parts.length - 1];
+				let detailUrl = 'api/products/' + parts[parts.length - 1];
 				
 				fetch(detailUrl)
 				.then(resp => { return resp.json() })
@@ -31,8 +31,7 @@ class ContentRowTop extends Component{
 						this.setState({ nombre: producto.data.name });
 						this.setState({ descripcion: producto.data.description });
 						let parts = producto.data.image.split('/');
-						this.setState({ imageSrc: 'img/products/' + parts[parts.length - 1] });
-						
+						this.setState({ imageSrc: 'api/products/' + parts[parts.length - 1] });
 					})
 					.catch(error => {
 						return (error)
@@ -48,6 +47,7 @@ class ContentRowTop extends Component{
 		} else {
 			imageRoute = this.state.image;
 		}
+		console.log(imageRoute)
 
 		return (
 			<React.Fragment>

@@ -18,6 +18,7 @@ class todosLosProductos extends Component{
             this.setState({productList: productos.products})
         })
         .catch(error => console.log(error))
+    
     }
 
     render(){

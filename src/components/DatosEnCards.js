@@ -13,15 +13,14 @@ class DatosCards extends Component{
     }
     
     componentDidMount(){
-        let cantProductos = fetch('api/products').then(respuesta =>{return respuesta.json()});
-        let cantUsuarios = fetch('api/users/').then(respuesta =>{return respuesta.json()});
-        let categoriesCount = fetch('api/products').then(respuesta =>{return respuesta.json()});
+        let cantProductos = fetch('/api/products/').then(respuesta =>{return respuesta.json()});
+        let cantUsuarios = fetch('/api/users').then(respuesta =>{return respuesta.json()});
+        let categoriesCount = fetch('/api/products/').then(respuesta =>{return respuesta.json()});
         Promise.all ([cantProductos,cantUsuarios,categoriesCount])
         .then (([cantProductos,cantUsuarios,categoriesCount]) =>{ 
-            this.setState ({productLength: cantProductos.meta.Count})
-            this.setState ({usersLength: cantUsuarios.meta.Count})
-            this.setState ({categories: categoriesCount.meta.Count})
-            console.log(this.state.cantProductos);console.log(this.state.cantUsuarios);console.log(this.state.categoriesCount);
+            this.setState ({productLength: cantProductos.meta.count})
+            this.setState ({usersLength: cantUsuarios.count})
+            this.setState ({categories: categoriesCount.meta.countcat})
         })
     }
 

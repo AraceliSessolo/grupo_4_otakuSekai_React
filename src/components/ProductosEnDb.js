@@ -10,7 +10,7 @@ class ProductosEnDb extends Component{
     }
 
     componentDidMount(){
-        fetch('api/products')
+        fetch('api/products/')
         .then(respuesta =>{ return respuesta.json()})
         .then(productos =>{ this.setState({productList: productos.data})})
         .catch(error => console.log(error))
