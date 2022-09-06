@@ -3,19 +3,33 @@ import DatosGrilla from './DatosGrilla';
 
 let tableRowsData = [
     {
-        nombre: 'Billy Elliot ',
-        Length: '123',
-        Rating: '5',
-        Categories: ['Drama','Comedia'],
-        Awards: 2
+        nombre: 'Mangas ',
+        Length: '2',
     },
     {
-        nombre: 'Alicia en el país de las maravillas',
-        Length: '142',
-        Rating: '4.8',
-        Categories: ['Drama','Acción','Comedia'],
-        Awards: 3
+        nombre: 'Indumentaria',
+        Length: '4',
     },
+    {
+        nombre: 'Posters',
+        Length: '5',
+    },
+    {
+        nombre: 'Figuras',
+        Length: '6',
+    },
+    {
+        nombre: 'Tazas',
+        Length: '1',
+    },
+    {
+        nombre: 'Llaveros',
+        Length: '2',
+    },
+    {
+        nombre: 'Otros',
+        Length: '2',
+    }
     
 ]
 
@@ -23,28 +37,17 @@ let tableRowsData = [
 function Grilla (){
     return (
         /* <!-- DataTales Example --> */
-        <div className="card shadow mb-4">
+        <div className="card shadow mb-4 row cajaDeProductos grillaCategorias">
             <div className="card-body">
                 <div className="table-responsive">
                     <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
                         <thead>
                             <tr>
-                                <th>Nombre</th>
-                                <th>Descripción</th>
-                                <th>Precio</th>
-                                <th>Categoria</th>
-                                <th>Descuento</th>
+                                <th>Categoría</th>
+                                <th>Cantidad</th>
                             </tr>
                         </thead>
-                        <tfoot>
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Descripción</th>
-                                <th>Precio</th>
-                                <th>Categoria</th>
-                                <th>Descuento</th>
-                            </tr>
-                        </tfoot>
+                        
                         <tbody>
                             {
                             tableRowsData.map( ( row , i) => {

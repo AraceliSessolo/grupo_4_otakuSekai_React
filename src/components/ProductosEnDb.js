@@ -19,10 +19,10 @@ class ProductosEnDb extends Component{
     render(){
         return (
             <React.Fragment>
-                <div className="col-lg-6 mb-4">						
+                <div className="row cajaDeProductos">						
                     <div className="card shadow mb-4">
                         <div className="card-header py-3">
-                            <h6 className="h1 m-0 font-weight-bold text-gray-800">Productos</h6>
+                            <h6 className="h4 m-0 font-weight-bold text-gray-800">Productos</h6>
                         </div>
                         <div className="card-body">
                             <div className="row">

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import foto from "../assets/images/gundam.png"
+import foto from "../assets/images/totoro-icon.png"
 
 function SmallCard(props){
     return(
@@ -13,7 +13,7 @@ function SmallCard(props){
                             <div className="h5 mb-0 font-weight-bold text-gray-800">{props.valor}</div>
                         </div>
                         <div className="col-auto">
-                            <img className={`fas fa-2x text-gray-300`} src={foto}  alt="gundam" ></img>
+                            <img className={`fas fa-2x text-gray-300 width-totoro`} src={foto}  alt="totoro" ></img>
                         </div>
                     </div>
                 </div>

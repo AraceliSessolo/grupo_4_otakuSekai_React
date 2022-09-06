@@ -5,7 +5,7 @@ function Productos(props){
         <React.Fragment>
             <div className="col-lg-6 mb-4">
                 <div className="product-card card text-white bg-dark shadow">
-                    <div className="h5 card-body">
+                    <div className="card-body back-azul">
                         {props.name}
                     </div>
                 </div>

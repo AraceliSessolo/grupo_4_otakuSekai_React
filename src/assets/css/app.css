@@ -619,14 +619,15 @@ pre code {
     padding-left: .75rem;
     margin-right: auto;
     margin-left: auto;
-    background-image: url("../images/fondo.jpg")
+    background-image: url("../images/back-anime.jpg")
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -.75rem;
-    margin-left: -.75rem
+    margin-left: -.75rem;
+    text-align: center;
 }
 
 .no-gutters {
@@ -4385,7 +4386,8 @@ input[type=submit].btn-block {
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 .navbar-nav .nav-link {
@@ -4775,7 +4777,7 @@ input[type=submit].btn-block {
 
 .card-body {
     flex: 1 1 auto;
-    padding: 1.25rem
+    padding: 1.25rem;
 }
 
 .card-title {
@@ -10678,7 +10680,8 @@ a:focus {
 #wrapper #content-wrapper {
     background-color: #f8f9fc;
     width: 100%;
-    overflow-x: hidden
+    overflow-x: hidden;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 #wrapper #content-wrapper #content {
@@ -11317,7 +11320,7 @@ a:focus {
 }
 
 .sidebar .sidebar-brand {
-    height: 4.375rem;
+/*     height: 4.375rem; */
     text-decoration: none;
     font-size: 1rem;
     font-weight: 800;
@@ -12248,4 +12251,25 @@ body.sidebar-toggled footer.sticky-footer {
 
 .detalleProducto{
     text-align: justify;
+}
+
+.card{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4) !important
+}
+
+.back-azul{
+    background-color: #003F91;
+    border-radius: 10px;
+}
+
+.cajaDeProductos{
+    margin: 2px 20px;
+}
+
+.grillaCategorias{
+    width: 100%;
+}
+
+.width-totoro{
+    width: 70%;
 }

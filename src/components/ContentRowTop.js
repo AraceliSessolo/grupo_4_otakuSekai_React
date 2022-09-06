@@ -53,7 +53,7 @@ class ContentRowTop extends Component{
 				<div className="container-fluid">
 					
 					<div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-						<h1 className="h3 mb-0 text-gray-800">Otaku Sekai Dashboard</h1>
+						<h1 className="h3 mb-0 text-gray-800" style={{ paddingTop: '15px' }}>Otaku Sekai Dashboard</h1>
 					</div>
 					
 					
@@ -65,23 +65,24 @@ class ContentRowTop extends Component{
 
 						<CategoriasDb />
 
-						<Chart />
-
 						<div className="col-lg-6 mb-4">
 								<div className="card shadow mb-4">
 									<div className="card-header py-3">
-										<h5 className="h1 m-0 font-weight-bold text-gray-800">Último Producto Creado</h5>
+										<h5 className="h4 m-0 font-weight-bold text-gray-800">Último Producto Creado</h5>
 									</div>
 									<div className="card-body">
 										<div className="text-center">
 											<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={imageRoute} alt="Imagen de producto" />
 
 										</div>
-										<p className="h2"> <strong> {this.state.nombre} </strong> </p>
-										<p className="h4"> <strong> {this.state.descripcion} </strong> </p>
+										<p className="h5"> <strong> {this.state.nombre} </strong> </p>
+										<p className="h7"> {this.state.descripcion} </p>
 									</div>
 								</div>
 							</div>
+							
+
+						<Chart />
 
 						<ProductosEnDb />
 
